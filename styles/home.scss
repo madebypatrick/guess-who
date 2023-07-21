@@ -1,0 +1,50 @@
+@import "./variables.scss";
+
+body {
+  background-color: $sixty;
+  // background-color: red;
+}
+
+.container {
+  display: flex;
+  height: 70vh;
+  width: 90vw;
+  margin: auto;
+  box-shadow: 1px 3px 10px grey;
+  border-radius: 10px;
+
+
+  .left-side {
+    width: 50%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius:  10px;
+
+
+
+    background-color: $thirty;
+  }
+  .right-side {
+    width: 50%;
+    background-color: $sixty;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius:  10px;
+  }
+}
+.title h1 {
+  color: $ten;
+  font-family: $secondfamily;
+  text-align: center;
+  font-size: 40px;
+}
+.left-side p {
+  padding: 10px;
+  font-family: $fontfamily;
+  text-align: center;
+  color: $sixty;
+}
+
+.right-side h1 {
+  font-family: $fontfamily;
+  color: $ten;
+  margin-left: 180px;
+}

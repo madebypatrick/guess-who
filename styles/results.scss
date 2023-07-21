@@ -1,0 +1,83 @@
+@import "./variables.scss";
+
+.results-buttons {
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  font-family: $fontfamily;
+  padding-top: 50px;
+  width: 50%;
+  justify-content: center;
+}
+
+.howto-button,
+.score-button,
+.ranking-button {
+  cursor: pointer;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: $sixty;
+  border: 1px solid $sixty;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+
+// ---------------------------------------------model section------------------------------------------
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  font-family: $fontfamily;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 50%;
+  h2 {
+    font-family: $secondfamily;
+    color: $ten;
+    text-align: center;
+  }
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  width: 15%;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+.back-button {
+  cursor: pointer;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -50px;
+  right: 16px;
+  font-size: 38px;
+  color: red;
+}
+
+.specific-route-button {
+  padding: 8px 16px;
+  background-color: $A;
+  color: $sixty;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+}

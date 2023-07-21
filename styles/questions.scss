@@ -1,0 +1,145 @@
+@import "./variables.scss";
+
+.questions-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: $fontfamily;
+  margin: auto;
+  width: 90%;
+  flex-direction: column;
+  gap: 10px;
+  // background-color: pink;
+  justify-content: space-between;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  // margin: 10px;
+}
+
+.image-container {
+  flex: 3;
+  margin-right: 20px;
+  // background-color: blue;
+
+  img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    box-shadow: 1px 3px 2px grey;
+  }
+}
+
+.options-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  // background-color: green;
+}
+.score-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 20px;
+  padding: 20px 0px;
+  // position: relative;
+  background: #dde1e7;
+}
+
+.score-fraction,
+.correct-container,
+.wrong-container {
+  // margin: 50px;
+  height: 50px;
+  width: 150px;
+  background: #dde1e7;
+  border-radius: 6px;
+  box-shadow: inset -3px -3px 7px #ffffffb0,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+  margin-left: auto;
+  // right: 0px;
+  margin-right: 20px;
+
+  // position: absolute;
+
+  p {
+    top: 50%;
+    width: 100%;
+    text-align: center;
+  }
+}
+.score-fraction p {
+  color: $ten;
+}
+
+.correct-container p {
+  color: $B;
+}
+
+.wrong-container p {
+  color: red;
+}
+
+.option {
+  padding: 0px;
+  margin-bottom: 10px;
+  color: black;
+  background-color: $background;
+  box-shadow: 1px 1px 2px grey;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.option.correct {
+  background-color: green;
+  color: $sixty;
+}
+
+.option.incorrect {
+  background-color: red;
+  color: $sixty;
+}
+
+.next-button {
+  font-family: $fontfamily;
+
+  cursor: pointer;
+  border-radius: 50px;
+  width: 20%;
+  margin: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  background: $sixty;
+  border: 1px solid $sixty;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.next-button.inactive {
+  background-color: $sixty;
+  color: black;
+  cursor: not-allowed;
+}
+
+.next-button.active {
+  background-color: $ten;
+  color: $sixty;
+}
+
+.timer-container {
+  width: 50%;
+  align-content: center;
+  // background-color: blue;
+  padding: 20px;
+  margin: auto;
+  // position: relative;
+}

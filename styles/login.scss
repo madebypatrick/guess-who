@@ -1,0 +1,29 @@
+@import "./variables.scss";
+
+.user-login input {
+//   border-color: red;
+  border-radius: 50px;
+  border: none;
+  background-color: $background;
+
+  display: flex;
+  margin-bottom: 8px;
+  margin-left: 150px;
+
+  padding: 12px 20px;
+}
+.user-login {
+//   background-color: green;
+  padding-top: 50px;
+}
+
+.user-login button{
+background-color: $ten;
+border: none;
+border-radius: 50px;
+height: 30px;
+width: 150px;
+margin-left:190px;
+font-family: $fontfamily;
+color: $sixty;
+}

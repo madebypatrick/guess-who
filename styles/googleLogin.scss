@@ -1,0 +1,27 @@
+@import "./variables.scss";
+
+.google-container {
+  font-family: $fontfamily;
+
+  margin-top: 50px;
+  margin-left: 200px;
+  align-items: center;
+}
+.google-button {
+  font-size: 35px;
+  padding-left: 10px;
+}
+
+.google-button-1 {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  background-color: $background;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px grey;
+  margin-left: 5px;
+}
+.google-button-1 span {
+  margin-left: 10px;
+}
